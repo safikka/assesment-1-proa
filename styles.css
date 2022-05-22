@@ -1,0 +1,143 @@
+/* Buat font nya */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* Buat variabel */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*========== Warna ==========*/
+  --warna-primer: #4e260d;
+  --warna-sekunder: #fae04d;
+  --warna-container: #fff;
+
+  /*========== Font ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+  --kecil-font-size: 0.725rem;
+}
+
+/* Settingan global */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--warna-primer);
+  background: var(--warna-sekunder);
+}
+main {
+  padding-inline: 1.5rem;
+  padding-bottom: 1rem;
+}
+section {
+  margin-block: 0.75rem;
+}
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+}
+h3 {
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+}
+select {
+  color: white;
+  background-color: var(--warna-primer);
+}
+.gambar-bulet {
+  border-radius: 50%;
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  transition: 0.4s;
+}
+.card h1 {
+  font-size: var(--normal-font-size);
+}
+.card p {
+  font-size: var(--kecil-font-size);
+  text-align: justify;
+}
+.konten-kiri {
+  flex: 1;
+}
+.konten-kanan {
+  flex: 3;
+}
+.format-konten-first {
+  padding-bottom: 1rem;
+}
+.format-konten {
+  padding-block: 1rem;
+  border-top: 0.5px solid var(--warna-primer);
+}
+.form-label {
+  font-size: var(--kecil-font-size);
+}
+
+/* Bagian Section Profil */
+.profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.fotoprofil {
+  width: 25vh;
+  border: 5px solid white;
+  transition: 0.4s;
+}
+.namaprofil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.namaprofil h1 {
+  text-align: center;
+}
+.namaprofil h3 {
+  text-align: center;
+}
+
+/* Bagian Section Portfolio */
+.portfolio img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+/* Bagian Section Portfolio */
+.form-format {
+  display: flex;
+  flex-direction: column;
+  padding-block: 0.25rem;
+}
+.form-input {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid var(--warna-primer);
+}
+.form-detail {
+  padding: 0.5rem;
+}
+
+/* Footer */
+.container-footer {
+  padding: 1rem;
+  background-color: var(--warna-primer);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--kecil-font-size);
+  text-align: center;
+}
